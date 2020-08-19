@@ -1,0 +1,3 @@
+joi for input validation
+bcrypt for Hashing password
+JWT for authentication
