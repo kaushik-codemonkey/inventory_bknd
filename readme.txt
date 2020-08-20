@@ -1,4 +1,5 @@
-APIs for InventoryApp
+----------------------------------APIs for InventoryApp-----------------------------
+
 APIDOC:
 1) POST /api/user/register/
 Body: {
