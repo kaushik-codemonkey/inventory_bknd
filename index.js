@@ -4,6 +4,7 @@ const env = require("dotenv");
 const mongoose = require("mongoose");
 const auth = require("./routes/auth");
 const postRoute = require("./routes/posts");
+const cors = require("cors");
 env.config();
 
 // connect to DB
@@ -13,6 +14,7 @@ mongoose.connect(
   () => console.log("connected to mongo")
 );
 // middleware
+app.use(cors());
 app.use(express.json());
 // for JWT authentication
 // route middlewares

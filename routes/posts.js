@@ -4,7 +4,7 @@ const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 
 // get lists
-router.get("/", verify, async (req, res) => {
+router.get("/posts", verify, async (req, res) => {
   const user = await User.findOne({
     _id: jwt.decode(req.headers.auth_token, process.env.TOKEN_SECRET)._id,
   });
